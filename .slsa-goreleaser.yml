@@ -1,0 +1,10 @@
+version: 1
+env:
+  - GO111MODULE=on
+  - CGO_ENABLED=0
+
+goos: linux
+goarch: amd64
+binary: task10-{{ .Os }}-{{ .Arch }}
+ldflags:
+  - -s {{ .Env.VERSION_LDFLAGS }}
