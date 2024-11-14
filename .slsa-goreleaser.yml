@@ -6,5 +6,3 @@ env:
 goos: linux
 goarch: amd64
 binary: task10-{{ .Os }}-{{ .Arch }}
-ldflags:
-  - -s {{ .Env.VERSION_LDFLAGS }}
